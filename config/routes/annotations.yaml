@@ -1,0 +1,12 @@
+web_user_controllers:
+    resource: ../../src/Controller/Web/User
+    type: annotation
+    prefix: /
+web_admin_controllers:
+    resource: ../../src/Controller/Web/Admin
+    type: annotation
+    prefix: /admin/
+rest_controllers:
+    resource: ../../src/Controller/Rest/User
+    type: annotation
+    prefix: /api
