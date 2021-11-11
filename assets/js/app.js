@@ -1,32 +1,14 @@
-// /*import React, { Component } from "react";
-/*
-import { Provider, ReactReduxContext } from "react-redux";
-import ReactDOM from "react-dom";
-import LayoutContainer from "./components/containers/LayoutContainer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-let propTypes = require("prop-types");
-import store from "./components/store/index";
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <LayoutContainer />
-    </Router>
-  </Provider>,
-  document.getElementById("root")
-);
-window.store = store;*/
+require("../vendors/popper/popper.min.js");
+require("../vendors/bootstrap/bootstrap.min.js");
+require("../vendors/anchorjs/anchor.min.js");
+require("../vendors/is/is.min.js");
+require("../vendors/fullcalendar/main.min.js");
+require("../js/flatpickr.js");
+require("../vendors/dayjs/dayjs.min.js");
+require("../vendors/fontawesome/all.min.js");
+require("../vendors/lodash/lodash.min.js");
+require("../vendors/list.js/list.min.js");
 
-require("../sass/main.scss");
-require("@fortawesome/fontawesome-free/css/all.css");
-require("@fortawesome/fontawesome-free/js/all.js");
+import "../sass/main.css"
 
-
-// this "modifies" the jquery module: adding behavior to it
-// the bootstrap module doesn't export/return anything
-require("bootstrap/dist/css/bootstrap.min.css");
-require("bootstrap/dist/js/bootstrap.min");
-
-// or you can include specific pieces
-// require('bootstrap/js/dist/tooltip');
-// require('bootstrap/js/dist/popover');

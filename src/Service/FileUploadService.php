@@ -26,7 +26,7 @@ class FileUploadService
      * @param UploadedFile $file
      * @return string filename
      */
-    public function upload(UploadedFile $file) : string
+    public function upload(UploadedFile $file)
     {
         if(!$this->verifyUploadedImageFileExtension($file)) return null;
         $originalFileName = $file->getClientOriginalName();

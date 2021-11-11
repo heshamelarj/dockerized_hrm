@@ -23,24 +23,24 @@ Encore
    * Each entry will result in one JavaScript file (e.g. app.js)
    * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
    */
-  .addEntry("app", "./assets/js/app.js")
-  .addEntry("fa-js", "@fortawesome/fontawesome-free/js/all.js")
-  .addEntry("bootstrap4css", "bootstrap/dist/css/bootstrap.min.css")
-  .addEntry("bootstrap4js", "bootstrap/dist/js/bootstrap.min.js")
 
-  .addStyleEntry("main", "./assets/sass/main.scss")
-  .addStyleEntry("fa-css", "@fortawesome/fontawesome-free/css/all.css")
+
+  .addEntry("app", "./assets/js/app.js")
+  .addStyleEntry("appTheme", "./assets/css/theme.css")
+  .addStyleEntry("userTheme", "./assets/css/user.css")
+
+
 
   // enables Sass/SCSS support
   .enableSassLoader(function(options) {}, {
     resolveUrlLoader: false
   })
 
-  .enablePostCssLoader(function(options) {
-    options.config = {
-      path: "./postcss.config.js"
-    };
-  })
+  // .enablePostCssLoader(function(options) {
+  //   options.config = {
+  //     path: "./postcss.config.js"
+  //   };
+  // })
 
   //.addEntry('page1', './assets/js/page1.js')
   //.addEntry('page2', './assets/js/page2.js')
@@ -62,7 +62,7 @@ Encore
   .cleanupOutputBeforeBuild()
   .enableBuildNotifications()
   .enableSourceMaps(!Encore.isProduction())
-  .enableReactPreset()
+
   // enables hashed filenames (e.g. app.abc123.css)
   .enableVersioning(Encore.isProduction())
 
