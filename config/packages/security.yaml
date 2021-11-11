@@ -28,6 +28,9 @@ security:
               login_path: login
               check_path: login
               provider: users
+            guard:
+                authenticators:
+                    - App\Security\LoginFormAuthenticator
              # csrf_token_generator: security.csrf.token_manager
 
             # activate different ways to authenticate
