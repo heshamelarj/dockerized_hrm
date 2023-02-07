@@ -10,7 +10,7 @@
         "jms/serializer-bundle": "^3.4",
         "knplabs/knp-snappy-bundle": "^1.7",
         "sensio/framework-extra-bundle": "^5.5",
-        "symfony/asset": "4.4.*",
+        "symfony/asset": "5.4.18",
         "symfony/console": "4.4.*",
         "symfony/dotenv": "4.4.*",
         "symfony/expression-language": "4.4.*",
@@ -37,6 +37,7 @@
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
+
         "symfony/test-pack": "*",
         "symfony/web-server-bundle": "4.4.*"
     },
