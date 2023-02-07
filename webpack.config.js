@@ -29,7 +29,7 @@ Encore
   .addStyleEntry("appTheme", "./assets/css/theme.css")
   .addStyleEntry("userTheme", "./assets/css/user.css")
 
-
+    .enableVueLoader()
 
   // enables Sass/SCSS support
   .enableSassLoader(function(options) {}, {
